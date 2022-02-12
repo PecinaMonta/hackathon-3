@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Cart() {
   return (
     <div className="container-fluid">
@@ -16,23 +17,31 @@ function Cart() {
       <div className="tabs">
         <ul className="nav nav-tabs">
           <li class="nav-item">
-            <a
+            <Link
               className="nav-link active"
               aria-current="page"
-              href="/cart/products"
+              to="/cart/products"
             >
               Products
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/cart/address">
-              Adress
-            </a>
+            <Link
+              className="nav-link active"
+              aria-current="page"
+              to="/cart/address"
+            >
+              Address
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/cart/summary">
+            <Link
+              className="nav-link active"
+              aria-current="page"
+              to="/cart/summary"
+            >
               Summary
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

@@ -6,6 +6,7 @@ import Cart from "../Pages/Cart";
 import Home from "../Pages/Home";
 import Products from "./Products";
 import Address from "./Address";
+import Summary from "./Summary";
 
 function Content() {
   return (
@@ -18,7 +19,7 @@ function Content() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/cart/products" element={<Products />} />
         <Route path="/cart/address" element={<Address />} />
-        <Route path="/cartsummary" element={<Summary />} />
+        <Route path="/cart/summary" element={<Summary />} />
       </Routes>
     </div>
   );
