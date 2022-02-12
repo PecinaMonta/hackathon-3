@@ -10,10 +10,10 @@ function Content() {
         <div className="container">
             <Routes>
                 <Route path="/" element={<Home />}/>
-                <Route path="/features" element={<Categories />}/>
-                <Route path="/features" element={<Category123/>}/>
-                <Route path="/features" element={<ProductX/>}/>\
-                <Route path="/features" element={<Cart/>}/>
+                <Route path="/categories" element={<Categories />}/>
+                <Route path="/category123" element={<Category123/>}/>
+                <Route path="/categoryX" element={<ProductX/>}/>
+                <Route path="/cart" element={<Cart/>}/>
             </Routes>
         </div>
     )
