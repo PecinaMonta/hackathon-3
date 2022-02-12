@@ -1,10 +1,6 @@
-import Slider from "../Components/Slider";
-
-function Home() {
+function CategoryLanding() {
     return (
-
         <div>
-            <Slider />
 <div className="album py-5 bg-light">
     <div className="container">
 
@@ -64,4 +60,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default CategoryLanding;
