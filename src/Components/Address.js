@@ -38,13 +38,18 @@ function Address() {
               className="form-control"
               aria-label="Sizing example input"
               aria-describedby="inputGroup-sizing-lg"
+              id="addressInput"
             />
           </div>
         </div>
       </div>
       <br />
-      <button type="button" class="btn btn-outline-success">
-        Confirm
+      <button
+        type="button"
+        onClick="AddressOutput()"
+        className="btn btn-outline-success"
+      >
+        Submit
       </button>
     </div>
   );
