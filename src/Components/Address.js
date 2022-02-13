@@ -46,7 +46,7 @@ function Address() {
       <br />
       <button
         type="button"
-        onClick="AddressOutput()"
+        onClick={updateAddressShip}
         className="btn btn-outline-success"
       >
         Submit

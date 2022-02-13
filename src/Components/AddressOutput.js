@@ -1,9 +1,19 @@
-function AddressOutput() {
-  let inputVal = document.getElementById("addressInput");
+import { useState } from "react";
 
-  return;
-  <div>
-    table.style.display = table.style.display === "none" ? "block" : "none";
-  </div>;
+function AddressOutput() {
+  const [addressShip, setAddress1] = useState("");
+  const [addressBill, setAddress2] = useState("");
+  const updateAddressShip = (event) => {
+    setAddress1(event.target.value);
+  };
+  const updateAddressBill = (event) => {
+    setAddress2(event.target.value);
+  };
+  return (
+    <div>
+      <h2>Adress:{addressShip}</h2> <br></br>
+      <h2>Adress:{addressBill}</h2> <br></br>
+    </div>
+  );
 }
 export default AddressOutput;

@@ -7,10 +7,10 @@ function Cart() {
       <section className="content-section">
         <div className="cart-row display-flex">
           <div className="col-6">
-            <span className="cart-item cart-header cart-column">Item</span>
-            <span className="cart-price cart-header cart-column">Qty</span>
-            <span className="cart-quantity cart-header cart-column">Price</span>
-            <span className="cart-quantity cart-header cart-column">Total</span>
+            <span className="cart-item ">Item</span>
+            <span className="cart-price ">Qty</span>
+            <span className="cart-quantity">Price</span>
+            <span className="cart-quantity">Total</span>
           </div>
           <div className="cart-items">
             <div className="cart-row">
@@ -43,10 +43,33 @@ function Cart() {
                   height={100}
                   alt="Europe landmark"
                 ></img>
-                <span className="cart-item-title">Ceļojums - Europe</span>
+                <span className="cart-item-title">Travel - Europe</span>
               </div>
-              <span className="cart-price cart-column">€600.00</span>
-              <div className="cart-quantity cart-column">
+              <span className="cart-price">€600.00</span>
+              <div className="cart-quantity col-8 col-sm-8">
+                <input
+                  className="cart-quantity-input"
+                  type="number"
+                  value="1"
+                ></input>
+                <button className="btn btn-danger" type="button">
+                  REMOVE
+                </button>
+              </div>
+            </div>
+            <div className="cart-row">
+              <div className="cart-item cart-col">
+                <img
+                  className="cart-item-image"
+                  src="../images/asia.jpg"
+                  width={180}
+                  height={100}
+                  alt="Asia landmark"
+                ></img>
+                <span className="cart-item-title">Travel - Asia</span>
+              </div>
+              <span className="cart-price">€600.00</span>
+              <div className="cart-quantity col-8 col-sm-8">
                 <input
                   className="cart-quantity-input"
                   type="number"
