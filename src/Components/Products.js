@@ -1,4 +1,5 @@
-import Cart from "../Pages/Cart";
+
+
 function Products() {
   return (
     <footer>

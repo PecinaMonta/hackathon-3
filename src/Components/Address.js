@@ -1,4 +1,4 @@
-import Cart from "../Pages/Cart";
+
 function Address() {
   return (
     <footer>
