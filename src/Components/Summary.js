@@ -1,3 +1,4 @@
+import AddressOutput from "./AddressOutput";
 import CartTabs from "./CartTabs";
 
 function Summary() {
@@ -5,6 +6,7 @@ function Summary() {
     <div className="containerFluid">
       <CartTabs />
       <h1 className="summaryTab">This is a summary tab</h1>
+      <AddressOutput />
     </div>
   );
 }
