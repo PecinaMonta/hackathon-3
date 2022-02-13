@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+import Summary from "./Summary";
+import Address from "./Address";
+import Products from "./Products";
+
 function CartTabs() {
   return (
     <div className="container-fluid">
@@ -17,26 +21,26 @@ function CartTabs() {
       <div className="tabs">
         <ul className="nav nav-tabs">
           <li class="nav-item">
-            <Link className="nav-link active" aria-current="page" to="/cart/">
-              Products
+            <Link className="nav-link active" aria-current="page" to="/products">
+             <Products/>
             </Link>
           </li>
           <li className="nav-item">
             <Link
               className="nav-link active"
               aria-current="page"
-              to="/cart/address"
+              to="/address"
             >
-              Address
+              <Address/>
             </Link>
           </li>
           <li className="nav-item">
             <Link
               className="nav-link active"
               aria-current="page"
-              to="/cart/summary"
+              to="/summary"
             >
-              Summary
+              <Summary/>
             </Link>
           </li>
         </ul>

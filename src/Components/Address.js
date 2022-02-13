@@ -1,5 +1,4 @@
 import { useState } from "react";
-import CartTabs from "./CartTabs";
 
 function Address() {
   const [addressShip, setAddress1] = useState("");
@@ -13,7 +12,6 @@ function Address() {
 
   return (
     <div className="containerFluid">
-      <CartTabs />
       <div className="row">
         <div className="col">
           <h2>Shipping address:</h2>
@@ -41,15 +39,11 @@ function Address() {
             />
           </div>
         </div>
-    <footer>
-      <div className="container">
-        <h1 className="productTab">This is a address tab</h1>
-      </div>
       <br />
       <button type="button" class="btn btn-outline-success">
         Confirm
       </button>
-    </div>
+    </div></div>
   );
 }
 

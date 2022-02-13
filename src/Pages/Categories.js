@@ -16,7 +16,7 @@ function Categories() {
             <div className="col">
                 <div className="col d-flex mb-5">
                 <Link to="https://en.wikipedia.org/wiki/Europe" className="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                 <img src="/images/europe.jpg" className="d-block" width="400"  alt="..."/>
+                 <img src="/images/europe.jpg" className="img-fluid"  alt="..."/>
                 </Link>
                 
                     <CategoryList title="EUROPE" description="Europe is a continent which is also recognised as part of Eurasia, located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere. Comprising the westernmost peninsulas of the continental landmass of Eurasia, it shares the continental landmass of Afro-Eurasia with both Asia and Africa. It is bordered by the Arctic Ocean to the north, the Atlantic Ocean to the west, the Mediterranean Sea to the south and Asia to the east. Europe is commonly considered to be separated from Asia by the watershed of the Ural Mountains, the Ural River, the Caspian Sea, the Greater Caucasus, the Black Sea and the waterways of the Turkish Straits. Although much of this border is over land, Europe is almost always recognised as its own continent because of its great physical size and the weight of its history and traditions."/>
