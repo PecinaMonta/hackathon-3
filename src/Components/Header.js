@@ -9,8 +9,8 @@ function Header() {
                     <img src="/images/logo.png" className="d-block" height="60px"  alt="..."/>
                     </Link>
                     <Link className="navbar-brand" to="/">Travelers</Link>
-                    <div className="collapse navbar-collapse " id="navbarNav">
-                        <ul className="navbar-nav ">
+                    <div className="collapse navbar-collapse justify-content-end mx-5" id="navbarNav">
+                        <ul className="navbar-nav">
                             <li className="nav-item ">
                                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                                 

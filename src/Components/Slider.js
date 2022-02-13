@@ -36,9 +36,9 @@ function Slider() {
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
+              <h5>Fly</h5>
               <p>
-                Some representative placeholder content for the first slide.
+                To more than 30 countries all around the world.
               </p>
             </div>
           </div>
@@ -49,9 +49,9 @@ function Slider() {
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
+              <h5>Book</h5>
               <p>
-                Some representative placeholder content for the second slide.
+                The perfect hotel offers and car rent.
               </p>
             </div>
           </div>
@@ -62,9 +62,9 @@ function Slider() {
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+              <h5>Guide</h5>
               <p>
-                Some representative placeholder content for the third slide.
+                Book a guide to make youre trip memorable experience.
               </p>
             </div>
           </div>
