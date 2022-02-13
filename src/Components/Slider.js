@@ -31,7 +31,7 @@ function Slider() {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src="/images/mountain1.jpg"
+              src="/images/gb1.jpg"
               className="d-block w-100"
               alt="..."
             />
@@ -44,7 +44,7 @@ function Slider() {
           </div>
           <div className="carousel-item">
             <img
-              src="/images/mountain2.jpg"
+              src="/images/gb2.jpg"
               className="d-block w-100"
               alt="..."
             />
@@ -57,7 +57,7 @@ function Slider() {
           </div>
           <div className="carousel-item">
             <img
-              src="/images/mountain3.jpg"
+              src="/images/gb3.jpg"
               className="d-block w-100"
               alt="..."
             />
