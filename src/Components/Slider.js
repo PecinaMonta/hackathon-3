@@ -31,40 +31,40 @@ function Slider() {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src="/images/mountain1.jpg"
+              src="/images/gb1.jpg"
               className="d-block w-100"
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
+              <h5>Fly</h5>
               <p>
-                Some representative placeholder content for the first slide.
+                To more than 30 countries all around the world.
               </p>
             </div>
           </div>
           <div className="carousel-item">
             <img
-              src="/images/mountain2.jpg"
+              src="/images/gb2.jpg"
               className="d-block w-100"
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
+              <h5>Book</h5>
               <p>
-                Some representative placeholder content for the second slide.
+                The perfect hotel offers and car rent.
               </p>
             </div>
           </div>
           <div className="carousel-item">
             <img
-              src="/images/mountain3.jpg"
+              src="/images/gb3.jpg"
               className="d-block w-100"
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+              <h5>Guide</h5>
               <p>
-                Some representative placeholder content for the third slide.
+                Book a guide to make youre trip memorable experience.
               </p>
             </div>
           </div>
