@@ -10,9 +10,13 @@ function AddressOutput() {
     setAddress2(event.target.value);
   };
   return (
-    <div>
-      <h2>Adress:{addressShip}</h2> <br></br>
-      <h2>Adress:{addressBill}</h2> <br></br>
+    <div className="row-2">
+      <div className="row mt-4 mb-4">
+        <h3>Adress:{addressShip}</h3>
+      </div>
+      <div className="row mt-4 mb-4">
+        <h3>Adress:{addressBill}</h3>
+      </div>
     </div>
   );
 }

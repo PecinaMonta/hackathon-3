@@ -60,7 +60,7 @@ function Cart() {
           </div>
           <div className="row text-center mt-4 mb-2">
             <img
-              className="col-10 col-sm-2 mt-2 mb-4"
+              className="col-10 col-sm-2 mt-2"
               src="../images/asia.jpg"
               width={180}
               height={100}
@@ -82,7 +82,7 @@ function Cart() {
             </div>
           </div>
         </div>
-        <div className="col-1 left mt-2 mb-2">
+        <div className="row text-right mt-2 mb-2">
           <strong className="cart-total-title">Total</strong>
           <span className="cart-total-price">€1800.00</span>
         </div>

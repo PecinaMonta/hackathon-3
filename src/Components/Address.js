@@ -12,11 +12,11 @@ function Address() {
   };
 
   return (
-    <div className="containerFluid">
+    <div className="container fluid">
       <CartTabs />
       <div className="row mt-1">
-        <div className="col mb-4">
-          <h2>Shipping address:</h2>
+        <div className="col mt-4 mb-4">
+          <h3>Shipping address:</h3>
           <div className="row mt-1">
             <div className="input-group input-group-lg">
               <input
@@ -30,8 +30,8 @@ function Address() {
             </div>
           </div>
         </div>
-        <div className="col mt-6 mb-4">
-          <h2>Billing address:</h2>
+        <div className="col mt-4 mb-4">
+          <h3>Billing address:</h3>
           <div className="row mt-1">
             <div className="input-group input-group-lg">
               <input
@@ -55,6 +55,15 @@ function Address() {
       >
         Submit
       </button>
+      <div className="row mt-2 mb-2">
+        <img
+          className="col col-sm-4 mt-2 mb-2"
+          src="../images/worldIsJustCat.jpeg"
+          width={380}
+          height={400}
+          alt="World map with cat shape"
+        ></img>
+      </div>
     </div>
   );
 }
