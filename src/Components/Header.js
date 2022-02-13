@@ -15,10 +15,16 @@ function Header() {
                                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                                 
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/categories">Categories</Link>
-                                
+                            <li className="nav-item dropdown">
+                                <Link className="nav-link dropdown-toggle" to="/categories" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</Link>
+                                <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <Link className="dropdown-item" to="/categories">Europe</Link>
+                                <Link className="dropdown-item" to="/categories">Asia</Link>
+                                <Link className="dropdown-item" to="/categories">Africa</Link>
+                                </div>
                             </li>
+
+
                             <li className="nav-item">
                                 <Link className="nav-link" to="/cart">Cart</Link>
                                 
