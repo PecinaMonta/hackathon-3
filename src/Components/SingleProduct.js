@@ -4,7 +4,7 @@ import { CartState } from '../Context/Context'
 
 const SingleProduct = ({prod}) => {
 
-    const { state: {cart}, dispatch, } = CartState();
+    const { state: {cart}, dispatch } = CartState();
     
   return (
   <div className='products'>

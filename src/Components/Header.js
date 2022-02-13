@@ -5,7 +5,7 @@ import { CartState } from "../Context/Context";
 
 function Header() {
 
-const { state: { cart }, } = CartState();
+const { state: { cart }} = CartState();
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">

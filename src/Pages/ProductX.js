@@ -5,7 +5,7 @@ import './products.css';
 
 function ProductX() {
 
-const {state: { products },} = CartState();
+const {state: { products }} = CartState();
 console.log({products});
 
     return (

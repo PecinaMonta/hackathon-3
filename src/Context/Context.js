@@ -6,7 +6,7 @@ const Cart = createContext ()
 
 const Context = ({children}) => {
  
- const products = [...Array(10)].map(() => ({
+ const products = [...Array(12)].map(() => ({
      id: faker.datatype.uuid(),
      name: faker.commerce.productName(),
      price: faker.commerce.price(),
