@@ -8,9 +8,8 @@ function Cart() {
         <div className="cart-row display-flex">
           <div className="col-6">
             <span className="cart-item ">Item</span>
-            <span className="cart-price ">Qty</span>
             <span className="cart-quantity">Price</span>
-            <span className="cart-quantity">Total</span>
+            <span className="cart-price ">Qty</span>
           </div>
           <div className="cart-items">
             <div className="cart-row">
@@ -45,7 +44,7 @@ function Cart() {
                 ></img>
                 <span className="cart-item-title">Travel - Europe</span>
               </div>
-              <span className="cart-price">€600.00</span>
+              <span className="cart-price">€400.00</span>
               <div className="cart-quantity col-8 col-sm-8">
                 <input
                   className="cart-quantity-input"
@@ -68,7 +67,7 @@ function Cart() {
                 ></img>
                 <span className="cart-item-title">Travel - Asia</span>
               </div>
-              <span className="cart-price">€600.00</span>
+              <span className="cart-price">€800.00</span>
               <div className="cart-quantity col-8 col-sm-8">
                 <input
                   className="cart-quantity-input"
@@ -82,6 +81,13 @@ function Cart() {
             </div>
           </div>
         </div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">€1800.00</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">
+          PURCHASE
+        </button>
       </section>
     </div>
   );
