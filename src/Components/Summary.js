@@ -1,13 +1,11 @@
-import Cart from "../Pages/Cart";
+import CartTabs from "./CartTabs";
 
 function Summary() {
   return (
-    <footer>
-      <div className="container">
-        <Cart />
-        <h1 className="productTab">This is a summary tab</h1>
-      </div>
-    </footer>
+    <div className="container">
+      <CartTabs />
+      <h1 className="summaryTab">This is a summary tab</h1>
+    </div>
   );
 }
 
