@@ -6,6 +6,21 @@ import Summary from "../Components/Summary";
 function Cart() {
   return (
     <div>
+    <div className="container-fluid">
+    <p className="subsequence">
+      <span>
+        <a href="/">Home</a>
+        {">"}
+      </span>
+      <span id="lastSubsequenceColor">Cart</span>
+    </p>
+    <div className="row">
+      <div className="col">
+        <h1>Cart</h1>
+      </div>
+      </div>
+      </div>
+    <div>
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Products</button>
@@ -28,7 +43,9 @@ function Cart() {
     <Summary/>
   </div>
 </div>
-    </div>
+</div>
+</div>
+  
   );
 }
 
