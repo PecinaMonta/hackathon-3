@@ -1,5 +1,4 @@
 import { useState } from "react";
-import CartTabs from "./CartTabs";
 
 function Address() {
   const [addressShip, setAddress1] = useState("");
@@ -12,6 +11,21 @@ function Address() {
   };
 
   return (
+
+    <div className="containerFluid">
+      <div className="row">
+        <div className="col">
+          <h2>Shipping address:</h2>
+          <div className="input-group input-group-lg">
+            <input
+              value={addressShip}
+              onChange={updateAddressShip}
+              type="text"
+              className="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-lg"
+            />
+
     <div className="container fluid">
       <CartTabs />
       <div className="row mt-1">
@@ -28,6 +42,7 @@ function Address() {
                 aria-describedby="inputGroup-sizing-lg"
               />
             </div>
+
           </div>
         </div>
         <div className="col mt-4 mb-4">
@@ -46,7 +61,6 @@ function Address() {
             </div>
           </div>
         </div>
-      </div>
       <br />
       <button
         type="button"
@@ -55,6 +69,9 @@ function Address() {
       >
         Submit
       </button>
+
+    </div></div>
+
       <div className="row mt-2 mb-2">
         <img
           className="col col-sm-4 mt-2 mb-2"
@@ -65,6 +82,7 @@ function Address() {
         ></img>
       </div>
     </div>
+
   );
 }
 

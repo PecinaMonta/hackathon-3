@@ -1,96 +1,52 @@
-import CartTabs from "../Components/CartTabs";
+import Address from "../Components/Address";
+import Products from "../Components/Products";
+import Summary from "../Components/Summary";
+
 
 function Cart() {
-  return (
-    <div className="containerFluid">
-      <CartTabs />
-      <section className="col mt-2 mb-2">
-        <div className="row text-center mt-2 mb-2">
-          <h3 className="CartHeader col-10 col-sm-4 mt-2">Item</h3>
+ return (
+    <div>
+    <div className="container-fluid">
+    <p className="subsequence">
+      <span>
+        <a href="/">Home</a>
+        {">"}
+      </span>
+      <span id="lastSubsequenceColor">Cart</span>
+    </p>
+    <div className="row">
+      <div className="col">
+        <h1>Cart</h1>
+      </div>
+      </div>
+      </div>
+    <div>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Products</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Address</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Summary</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <Products/>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <Address/>
+  </div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <Summary/>
+  </div>
+</div>
+</div>
+</div>
+  
 
-          <h3 className="col-10 col-sm-4 mt-2 ">Price</h3>
-
-          <h3 className="col-10 col-sm-2 mt-2 ">Qty</h3>
-
-          <div className="row text-center mt-2 mb-4">
-            <img
-              className="col-10 col-sm-2 mt-4"
-              src="../images/africa.jpg"
-              width={180}
-              height={100}
-              alt="Africa landmark"
-            ></img>
-            <span className="col-10 col-sm-2 mt-4">Travel - Africa</span>
-            <span className="col-10 col-sm-4 mt-4 ">€600.00</span>
-            <div className="col-10 col-sm-2 mt-4 ">
-              <input
-                className="col-10 col-sm-4 mt-4 "
-                type="number"
-                value="1"
-              ></input>
-            </div>
-            <div className="col-10 col-sm-2 mt-4">
-              <button className="btn btn-danger mt-4" type="button">
-                REMOVE
-              </button>
-            </div>
-          </div>
-          <div className="row text-center mt-4 mb-4">
-            <img
-              className="col-10 col-sm-2 mt-4"
-              src="../images/europe.jpg"
-              width={180}
-              height={100}
-              alt="Europe landmark"
-            ></img>
-            <span className="col-10 col-sm-2 mt-4">Travel - Europe</span>
-            <span className="col-10 col-sm-4 mt-4">€400.00</span>
-            <div className="col-10 col-sm-2 mt-4">
-              <input
-                className="col-10 col-sm-4 mt-4"
-                type="number"
-                value="1"
-              ></input>
-            </div>
-            <div className="col-10 col-sm-2 mt-4">
-              <button className="btn btn-danger" type="button">
-                REMOVE
-              </button>
-            </div>
-          </div>
-          <div className="row text-center mt-4 mb-2">
-            <img
-              className="col-10 col-sm-2 mt-2"
-              src="../images/asia.jpg"
-              width={180}
-              height={100}
-              alt="Asia landmark"
-            ></img>
-            <span className="col-10 col-sm-2 mt-4">Travel - Asia</span>
-            <span className="col-10 col-sm-4 mt-4">€800.00</span>
-            <div className="col-10 col-sm-2 mt-4">
-              <input
-                className="col-10 col-sm-4 mt-4"
-                type="number"
-                value="1"
-              ></input>
-            </div>
-            <div className="col-10 col-sm-2 mt-4">
-              <button className="btn btn-danger" type="button">
-                REMOVE
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="row text-right mt-2 mb-2">
-          <strong className="cart-total-title">Total</strong>
-          <span className="cart-total-price">€1800.00</span>
-        </div>
-        <button className="btn btn-outline-success mt-2 mb-2" type="button">
-          PURCHASE
-        </button>
-      </section>
-    </div>
   );
 }
 

@@ -1,6 +1,11 @@
+import { Badge} from "react-bootstrap";
+
 import { Link } from "react-router-dom";
+import { CartState } from "../Context/Context";
 
 function Header() {
+
+const { state: { cart }} = CartState();
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -18,16 +23,17 @@ function Header() {
                             <li className="nav-item dropdown">
                                 <Link className="nav-link dropdown-toggle" to="/categories" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</Link>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <Link className="dropdown-item" to="/categories">Europe</Link>
-                                <Link className="dropdown-item" to="/categories">Asia</Link>
-                                <Link className="dropdown-item" to="/categories">Africa</Link>
+                                <Link className="dropdown-item" to="/productX">Europe</Link>
+                                <Link className="dropdown-item" to="/productN">Asia</Link>
+                                <Link className="dropdown-item" to="/productZ">Africa</Link>
                                 </div>
                             </li>
 
 
                             <li className="nav-item">
-                                <Link className="nav-link" to="/cart">Cart</Link>
-                                
+                                <Link className="nav-link" to="/cart">Cart  
+                                <Badge>{cart.length}</Badge></Link>
+
                             </li>
                         </ul>
                     </div>

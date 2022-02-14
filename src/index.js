@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
 import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Context from './Context/Context';
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Context>
       <App />
-    </BrowserRouter>
+    </Context>
   </React.StrictMode>,
   document.getElementById('root')
 );
