@@ -14,7 +14,7 @@ function CartTabs() {
         <span id="lastSubsequenceColor">Cart</span>
       </p>
       <div className="row">
-        <div className="col">
+        <div className="col mt-2">
           <h1>Cart</h1>
         </div>
       </div>

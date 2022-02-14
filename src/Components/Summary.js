@@ -16,6 +16,7 @@ function Summary() {
   }, [cart]);
 
   return (
+
     <div >
       
       <h1 className="summaryTab">Your order summary</h1>
@@ -60,6 +61,7 @@ function Summary() {
         <Button type="button" disabled={cart.length === 0}>Checkout</Button>
       </div>
       </div>
+
   );
 }
 

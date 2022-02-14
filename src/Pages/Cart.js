@@ -4,7 +4,7 @@ import Summary from "../Components/Summary";
 
 
 function Cart() {
-  return (
+ return (
     <div>
     <div className="container-fluid">
     <p className="subsequence">
@@ -46,6 +46,7 @@ function Cart() {
 </div>
 </div>
   
+
   );
 }
 
