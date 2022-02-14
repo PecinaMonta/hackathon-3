@@ -1,63 +1,67 @@
 import AddressOutput from "./AddressOutput";
-import CartTabs from "./CartTabs";
+import { Button, ListGroup, ListGroupItem, Row, Col, Image} from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { CartState } from "../Context/Context";
+
 
 function Summary() {
+
+  const { state: { cart}, dispatch} = CartState();
+
+  const [total, setTotal] = useState();  
+  
+  useEffect(() => {
+  setTotal(cart.reduce((acc, curr) => acc + Number(curr.price)*curr.qty, 0 ));
+  }, [cart]);
+
   return (
-    <div className="containerFluid">
-      <CartTabs />
-      <div className="row">
-        <div className="col-4 col-sm-4 mt-2 ">
-          <AddressOutput />
-        </div>
-        <div className="col col-sm-8 mt-2">
-          <div className="row text-center mt-2 mb-2">
-            <h3 className="col-4 col-sm-4 mt-2">Item</h3>
-            <h3 className="col-4 col-sm-4 mt-2 ">Qty</h3>
-            <h3 className="col-4 col-sm-4 mt-2 ">Price</h3>
-            <div className="row text-center mt-2 mb-4">
-              <img
-                className="col-4 col-sm-2 mt-2 mb-2"
-                src="../images/africa.jpg"
-                width={180}
-                height={100}
-                alt="Africa landmark"
-              ></img>
-              <span className="col-4 col-sm-2 mt-4">Travel - Africa</span>
-              <span className="col-4 col-sm-4 mt-4">1</span>
-              <span className="col-4 col-sm-4 mt-4">€600.00</span>
-            </div>
-            <div className="row text-center mt-2 mb-4">
-              <img
-                className="col-4 col-sm-2 mt-2 mb-2"
-                src="../images/europe.jpg"
-                width={180}
-                height={100}
-                alt="Europe landmark"
-              ></img>
-              <span className="col-4 col-sm-2 mt-4">Travel - Europe</span>
-              <span className="col-4 col-sm-4 mt-4">1</span>
-              <span className="col-4 col-sm-4 mt-4">€400.00</span>
-            </div>
-            <div className="row text-center mt-4 mb-2">
-              <img
-                className="col-4 col-sm-2 mt-2 mb-2"
-                src="../images/asia.jpg"
-                width={180}
-                height={100}
-                alt="Asia landmark"
-              ></img>
-              <span className="col-4 col-sm-2 mt-4">Travel - Asia</span>
-              <span className="col-4 col-sm-4 mt-4">1</span>
-              <span className="col-4 col-sm-4 mt-4">€800.00</span>
-            </div>
-          </div>
-          <div className="row text-center mt-2 mb-4">
-            <h3 className="cart-total-title col-sm-2 mt-4 strong">Total</h3>
-            <h3 className="cart-total-price col-sm-2 mt-4">€1800.00</h3>
-          </div>
-        </div>
+
+    <div >
+      
+      <h1 className="summaryTab">Your order summary</h1>
+      <ListGroup className="productContainer">
+        <ListGroupItem>
+      <AddressOutput/>
+      
+      </ListGroupItem>
+        <ListGroupItem>
+          <Row>
+            <Col md={2}>Product</Col>
+            <Col md={2}></Col>
+            <Col md={2}>Price</Col>
+            <Col md={2}>Rating</Col>
+          </Row>
+        </ListGroupItem>
+        {
+          cart.map (prod => (
+            <ListGroupItem key={prod.id}>
+              <Row>
+                <Col md={2} >
+                <Image fluid rounded className="productImage" src={prod.image} alt={prod.name}/>
+                </Col>
+                <Col md={2}>
+                  <span>{prod.name}</span> 
+                </Col>
+                <Col md={2}>
+                  {prod.price} euro
+                </Col>
+                <Col md={2}>
+                  <Image fluid rounded src="/images/star.png" style={{height: 15}}/>
+                  {prod.ratings}/5
+                </Col>
+              </Row>
+              
+            </ListGroupItem>
+          ))
+        }
+      </ListGroup>
+      <div className="total">
+        <h4>Total: {total} euros</h4>
+        <Button type="button" disabled={cart.length === 0}>Checkout</Button>
       </div>
-    </div>
+      </div>
+
   );
 }
 
