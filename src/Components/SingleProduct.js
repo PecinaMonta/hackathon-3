@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Card } from 'react-bootstrap'
+import { Button, Card, Image } from 'react-bootstrap'
 import { CartState } from '../Context/Context'
 
 const SingleProduct = ({prod}) => {
@@ -16,7 +16,9 @@ const SingleProduct = ({prod}) => {
 
       <span>{prod.price.split(".")[0]} euro</span></Card.Text>
       <Card.Text>
-      <span>user rating {prod.ratings}/5</span>
+          <p>User rating: <br/>
+      <Image fluid rounded src="/images/star.png" style={{height: 15}}/>
+      <span> {prod.ratings}/5</span></p>
     </Card.Text>
     {
         cart.some(p => p.id===prod.id)?(
@@ -32,7 +34,7 @@ const SingleProduct = ({prod}) => {
         )
     }
 
-    <Button variant="secondary">View</Button>
+    <Button variant="secondary" href='/oneproduct' >View</Button>
   </Card.Body>
 </Card></div>)
 }

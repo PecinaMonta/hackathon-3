@@ -23,9 +23,9 @@ const { state: { cart }} = CartState();
                             <li className="nav-item dropdown">
                                 <Link className="nav-link dropdown-toggle" to="/categories" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</Link>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <Link className="dropdown-item" to="/categories">Europe</Link>
-                                <Link className="dropdown-item" to="/categories">Asia</Link>
-                                <Link className="dropdown-item" to="/categories">Africa</Link>
+                                <Link className="dropdown-item" to="/productX">Europe</Link>
+                                <Link className="dropdown-item" to="/productN">Asia</Link>
+                                <Link className="dropdown-item" to="/productZ">Africa</Link>
                                 </div>
                             </li>
 
